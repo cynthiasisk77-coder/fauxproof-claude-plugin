@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "fauxproof",
+  "displayName": "FauxProof",
+  "version": "1.4.4",
+  "description": "Protect approved writing, plans, prompts, instructions, and code from silent AI changes. Review exact differences, explicitly approve or reject proposals, create restore points, and recover earlier versions.",
+  "author": {
+    "name": "Lacynthia Sisk",
+    "email": "fauxproof.support@gmail.com",
+    "url": "https://fauxproof.com"
+  },
+  "homepage": "https://fauxproof.com",
+  "repository": "https://github.com/cynthiasisk77-coder/fauxproof-claude-plugin",
+  "license": "UNLICENSED",
+  "keywords": [
+    "ai-drift",
+    "approval-workflow",
+    "change-review",
+    "exact-diff",
+    "restore-points",
+    "version-control"
+  ],
+  "defaultEnabled": false
+}
