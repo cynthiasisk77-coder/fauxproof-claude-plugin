@@ -68,4 +68,6 @@ This public repository contains only the Claude plugin wrapper and instructions.
 
 Plugin version: 1.4.4
 
-Copyright © Lacynthia Sisk. All rights reserved. This repository is publicly available for evaluation, installation, and use of FauxProof; no broader license is granted.
+Copyright © 2026 Lacynthia Sisk.
+
+The files in this public Claude Code plugin-wrapper repository are licensed under the [Apache License 2.0](LICENSE). That license applies only to this repository. It does not license the private FauxProof backend, hosted service, databases, website content, or FauxProof names and trademarks.
