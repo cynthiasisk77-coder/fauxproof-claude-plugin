@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "fauxproof": {
+      "type": "http",
+      "url": "https://project-lockbox-production.up.railway.app/claude-mcp",
+      "oauth": {
+        "clientId": "tpc_rp9ofSPZkaZCTpRXeLWUzT",
+        "callbackPort": 45000,
+        "scopes": "lockbox:access"
+      }
+    }
+  }
+}
