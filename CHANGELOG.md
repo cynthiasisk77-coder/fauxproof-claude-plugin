@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5.0 — 2026-08-24
+
+- Added secure PNG, JPEG, GIF, and WebP attachment from the FauxProof review board in Claude.
+- Added a host-independent browser upload path using a short-lived, single-use credential.
+- Kept upload credentials out of URLs and Claude tool arguments.
+- Added server-side file-size, checksum, file-signature, project, and account validation before encrypted storage.
+- Preserved the existing text workflow and clarified that picture attachment is not visual-difference analysis.
+
 ## 1.4.4 — 2026-08-22
 
 - Added the first Claude Code plugin wrapper for the FauxProof 1.4.4 service.
