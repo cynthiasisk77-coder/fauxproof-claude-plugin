@@ -1,6 +1,6 @@
 ---
 name: fauxproof
-description: Protect approved writing, plans, instructions, prompts, or code from silent AI changes. Use for FauxProof projects, sections, drafts, proposals, receipts, backups, imports, locking, unlocking, comparisons, approvals, rejections, checkpoints, or restores; when the user mentions AI drift, unauthorized edits, exact wording, facts that must not change, or a correct prior version; or when they want FauxProof opened. Use FauxProof's private MCP tools for state, exact diffs, explicit approval, restore points, and receipts.
+description: Protect approved writing, plans, instructions, prompts, code, pictures, screenshots, graphs, or supported project files from silent AI changes or loss. Use for FauxProof projects, sections, drafts, proposals, receipts, backups, imports, picture/file upload or retrieval, locking, unlocking, comparisons, approvals, rejections, checkpoints, or restores; when the user mentions AI drift, unauthorized edits, exact wording, facts that must not change, a correct prior version, or asks to save/open a photo or screenshot; or when they want FauxProof opened. Use FauxProof's private MCP tools for state, exact diffs, explicit approval, encrypted project files, restore points, and receipts.
 ---
 
 # FauxProof
@@ -53,6 +53,13 @@ When “save this” is ambiguous, route it by intent: use a locked section for 
 3. Explain that a working draft is separate saved state and is not approved merely because it was saved.
 4. Use `protect_saved_draft` only when the user wants that saved draft turned into a pending, checkpointed proposal for review.
 5. Use `discard_section_draft` only for the working draft. Confirm that approved wording and restore points remain unchanged.
+
+## Save, open, or delete a picture/file
+
+1. When the user asks to save a photo, screenshot, graph, or image attached in Claude, call `open_picture_upload` so FauxProof's real review-board uploader appears. Claude cannot pass a chat attachment's original bytes directly to a remote MCP connector, so tell the user to select that same picture with **Add picture from device**. If `open_picture_upload` is unavailable, call `render_lockbox` and give the same instruction. Never ask for a public URL and never replace the picture with a text description.
+2. Explain that FauxProof keeps an encrypted copy with the active private project. Do not claim Claude automatically transferred the chat attachment.
+3. To show, reopen, retrieve, bring back, or download a saved picture, call `list_project_files` to identify the current file ID, then call `open_project_file`. Return the exact stored picture or exact private download rather than a description or summary. Never repeat its short-lived bearer URL in ordinary text or logs.
+4. For deletion, refresh state, identify the exact file ID and name, repeat the name and permanent scope, require the user's explicit confirmation and reason, then call `delete_project_file` with the exact name.
 
 ## Apply a decision
 
