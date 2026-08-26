@@ -39,7 +39,7 @@ claude --plugin-dir ./fauxproof-claude-plugin
 Open FauxProof and show my protected work.
 ```
 
-If you ask Claude to save an attached screenshot, photo, or graph, Claude opens the FauxProof review board. Choose **Add picture from device** and select that same image. A public download link is neither needed nor requested. To bring it back later, ask Claude to open the saved picture; FauxProof returns the exact stored image and an exact-file download.
+If you ask Claude to save an attached screenshot, photo, or graph, Claude should immediately call FauxProof's picture action and show **Add a picture to FauxProof**. Click it, choose **Add picture from device**, and select that same image. A public download link is neither needed nor requested. To bring it back later, ask Claude to open the saved picture; FauxProof returns the exact stored image and an exact-file download.
 
 During development, run `/reload-plugins` after changing the package.
 
@@ -64,7 +64,7 @@ The included skill instructs Claude to:
 
 This public repository contains only the Claude plugin wrapper and instructions. It does not contain the private FauxProof backend or any secret credentials. The bundled OAuth client ID is a public identifier for Claude Code and uses PKCE; no client secret is included. The plugin connects to FauxProof's dedicated Claude MCP route over HTTPS and uses OAuth with the `lockbox:access` scope. That route shares the existing FauxProof application core and private account storage; it does not create a second database or account system.
 
-For a picture attachment, the review board sends only the file you select through **Add picture from device** directly to FauxProof over HTTPS with a short-lived, single-use upload credential. Claude cannot forward an image attached at chat level into a remote connector, so the user reselects that same image in the board; no public URL is required. The credential is not put in a URL or exposed in Claude's tool arguments. FauxProof validates the picture before attaching it to the selected project and encrypts it at rest. Saved pictures are returned through short-lived, account/project/file-bound private preview and exact-download links.
+For a picture attachment, Claude first calls `open_picture_upload` and shows **Add a picture to FauxProof**. After you click it, the upload page sends only the file you select through **Add picture from device** directly to FauxProof over HTTPS with a short-lived, single-use upload credential. Claude cannot forward an image attached at chat level into a remote connector, so the user reselects that same image; no public URL is required. The credential is not put in a URL or exposed in Claude's tool arguments. FauxProof validates the picture before attaching it to the selected project and encrypts it at rest. Saved pictures are returned through short-lived, account/project/file-bound private preview and exact-download links.
 
 - [Privacy](https://fauxproof.com/privacy)
 - [Terms](https://fauxproof.com/terms)
@@ -73,7 +73,7 @@ For a picture attachment, the review board sends only the file you select throug
 
 ## Version
 
-Plugin version: 1.5.1
+Plugin version: 1.5.2
 
 Copyright © 2026 Lacynthia Sisk.
 
