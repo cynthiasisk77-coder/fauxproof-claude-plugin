@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.5.2 — 2026-08-26
+
+- Made Claude call `open_picture_upload` immediately instead of leading with the chat-attachment limitation.
+- Documented the clickable **Add a picture to FauxProof** action and same-picture device selection.
+- Kept saved-picture retrieval on `list_project_files` followed by `open_project_file`.
+
 ## 1.5.1 — 2026-08-24
 
 - Taught Claude to open FauxProof's real device picker for pictures attached in chat, with no public URL request.
