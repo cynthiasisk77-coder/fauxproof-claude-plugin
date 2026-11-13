@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.3 — 2026-11-13
+
+- Added the FauxProof copper fox listing icon (1024 × 1024 PNG).
+- Declared the privacy policy URL in the plugin manifest.
+
 ## 1.5.2 — 2026-08-26
 
 - Made Claude call `open_picture_upload` immediately instead of leading with the chat-attachment limitation.
