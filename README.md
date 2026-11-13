@@ -45,7 +45,12 @@ During development, run `/reload-plugins` after changing the package.
 
 ## Community marketplace
 
-After Anthropic approves the plugin for the `claude-community` marketplace, install it from Claude Code's plugin manager as `fauxproof@claude-community`. Because FauxProof connects to an external private service, an installed marketplace copy is disabled by default until you opt in. Enable it from `/plugin` or run `claude plugin enable fauxproof`, then connect from `/mcp`.
+After Anthropic approves the plugin for the `claude-community` marketplace, install it from Claude Code's plugin manager as `fauxproof@claude-community`.
+
+```text
+/plugin install fauxproof@claude-community
+```
+ Because FauxProof connects to an external private service, an installed marketplace copy is disabled by default until you opt in. Enable it from `/plugin` or run `claude plugin enable fauxproof`, then connect from `/mcp`.
 
 ## Safety behavior
 
