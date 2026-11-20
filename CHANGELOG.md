@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.4 — 2026-11-20
+
+- Changed the license for new versions from Apache License 2.0 to proprietary (all rights reserved).
+
 ## 1.5.3 — 2026-11-13
 
 - Added the FauxProof copper fox listing icon (1024 × 1024 PNG).

@@ -78,8 +78,8 @@ For a picture attachment, Claude first calls `open_picture_upload` and shows **A
 
 ## Version
 
-Plugin version: 1.5.2
+Plugin version: 1.5.4
 
-Copyright © 2026 Lacynthia Sisk.
+Copyright © 2026 Lacynthia Sisk. All rights reserved.
 
-The files in this public Claude Code plugin-wrapper repository are licensed under the [Apache License 2.0](LICENSE). That license applies only to this repository. It does not license the private FauxProof backend, hosted service, databases, website content, or FauxProof names and trademarks.
+The files in this repository are proprietary and may not be copied, modified, or redistributed without written permission; you may install and use the plugin to access the FauxProof service. See [LICENSE](LICENSE). This does not license the private FauxProof backend, hosted service, databases, website content, or FauxProof names and trademarks.
