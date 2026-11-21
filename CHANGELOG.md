@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.5 — 2026-11-21
+
+- Replaced the clone-and-run "Test from source" steps in the README with install steps through the Claude plugin directory.
+
 ## 1.5.4 — 2026-11-20
 
 - Changed the license for new versions from Apache License 2.0 to proprietary (all rights reserved).

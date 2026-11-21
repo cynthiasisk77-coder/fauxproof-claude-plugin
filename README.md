@@ -24,33 +24,19 @@ FauxProof supports text-based material such as writing, plans, prompts, instruct
 - A web browser for the FauxProof sign-in flow
 - A FauxProof account
 
-## Test from source
+## Install
 
-Clone this repository and load the plugin directly:
+1. In Claude, open the plugin directory and search for **FauxProof**.
+2. Select **Install**. Because FauxProof connects to an external private service, the plugin is disabled by default until you turn it on.
+3. Turn the plugin on, then connect FauxProof and complete the sign-in in your browser. In Claude Code, enable it from `/plugin` and connect from `/mcp`.
 
-```bash
-git clone https://github.com/cynthiasisk77-coder/fauxproof-claude-plugin.git
-claude --plugin-dir ./fauxproof-claude-plugin
-```
-
-`--plugin-dir` loads the source package directly for that session. Run `/mcp`, select `plugin:fauxproof:fauxproof`, and complete sign-in. Then try:
+Then try:
 
 ```text
 Open FauxProof and show my protected work.
 ```
 
 If you ask Claude to save an attached screenshot, photo, or graph, Claude should immediately call FauxProof's picture action and show **Add a picture to FauxProof**. Click it, choose **Add picture from device**, and select that same image. A public download link is neither needed nor requested. To bring it back later, ask Claude to open the saved picture; FauxProof returns the exact stored image and an exact-file download.
-
-During development, run `/reload-plugins` after changing the package.
-
-## Community marketplace
-
-After Anthropic approves the plugin for the `claude-community` marketplace, install it from Claude Code's plugin manager as `fauxproof@claude-community`.
-
-```text
-/plugin install fauxproof@claude-community
-```
- Because FauxProof connects to an external private service, an installed marketplace copy is disabled by default until you opt in. Enable it from `/plugin` or run `claude plugin enable fauxproof`, then connect from `/mcp`.
 
 ## Safety behavior
 
@@ -78,7 +64,7 @@ For a picture attachment, Claude first calls `open_picture_upload` and shows **A
 
 ## Version
 
-Plugin version: 1.5.4
+Plugin version: 1.5.5
 
 Copyright © 2026 Lacynthia Sisk. All rights reserved.
 
