@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.6 — 2026-11-21
+
+- Declared documentation, support, and terms-of-service URLs in the plugin manifest for the directory listing.
+
 ## 1.5.5 — 2026-11-21
 
 - Replaced the clone-and-run "Test from source" steps in the README with install steps through the Claude plugin directory.

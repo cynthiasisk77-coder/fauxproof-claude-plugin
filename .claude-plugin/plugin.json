@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "fauxproof",
   "displayName": "FauxProof",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "description": "Protect approved writing, plans, prompts, instructions, code, and supporting images from silent AI changes. Review exact differences, explicitly approve or reject proposals, create restore points, and recover earlier versions.",
   "author": {
     "name": "Lacynthia Sisk",
@@ -11,6 +11,9 @@
   },
   "homepage": "https://fauxproof.com",
   "privacyPolicyUrl": "https://fauxproof.com/privacy",
+  "documentationUrl": "https://github.com/cynthiasisk77-coder/fauxproof-claude-plugin#readme",
+  "supportUrl": "https://fauxproof.com/support",
+  "termsOfServiceUrl": "https://fauxproof.com/terms",
   "repository": "https://github.com/cynthiasisk77-coder/fauxproof-claude-plugin",
   "license": "LicenseRef-Proprietary",
   "keywords": [
