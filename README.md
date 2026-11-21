@@ -64,7 +64,7 @@ For a picture attachment, Claude first calls `open_picture_upload` and shows **A
 
 ## Version
 
-Plugin version: 1.5.5
+Plugin version: 1.5.6
 
 Copyright © 2026 Lacynthia Sisk. All rights reserved.
 
